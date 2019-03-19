@@ -163,6 +163,7 @@ class Chrome:
         new_env = os.environ.copy()
         new_env['HOME'] = self._home_tmpdir.name
         chrome_args = [
+                'xvfb-run',
                 self.chrome_exe,
                 '--remote-debugging-port=%s' % self.port,
                 '--use-mock-keychain', # mac thing

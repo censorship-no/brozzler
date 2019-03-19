@@ -176,7 +176,7 @@ class Chrome:
                 '--disable-first-run-ui', '--no-first-run',
                 '--homepage=about:blank', '--disable-direct-npapi-requests',
                 '--disable-web-security', '--disable-notifications',
-                '--disable-extensions', '--disable-save-password-bubble']
+                '--disable-save-password-bubble']
 
         if disk_cache_dir:
             chrome_args.append('--disk-cache-dir=%s' % disk_cache_dir)
